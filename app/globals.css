@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  --color-background: #faf6f0;
+  --color-surface: #f0ede4;
+  --color-surface-2: #ffffff;
+  --color-border: #e2dfd8;
+  --color-text-primary: #1a1208;
+  --color-text-secondary: #706e68;
+  --color-accent: #d4681e;
+  --color-accent-dark: #b8541a;
+  --color-accent-light: rgba(212, 104, 30, 0.12);
+  --color-primary: #8b2500;
+  --color-secondary: #3d2b1f;
+}
+
+@layer base {
+  :root {
+    --background: #faf6f0;
+    --surface: #f0ede4;
+    --surface-2: #ffffff;
+    --border: #e2dfd8;
+    --text-primary: #1a1208;
+    --text-secondary: #706e68;
+    --accent: #d4681e;
+    --accent-dark: #b8541a;
+    --accent-light: rgba(212, 104, 30, 0.12);
+    --primary: #8b2500;
+    --secondary: #3d2b1f;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-accent { color: var(--accent); }
+  .text-primary-dark { color: var(--primary); }
+  .bg-accent { background-color: var(--accent); }
+  .bg-surface { background-color: var(--surface); }
+  .bg-surface-2 { background-color: var(--surface-2); }
+  .border-custom { border-color: var(--border); }
+  .text-secondary-custom { color: var(--text-secondary); }
+
+  .shadow-soft {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .shadow-soft-lg {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+  }
+
+  .accent-glow {
+    box-shadow: 0 0 0 3px var(--accent-light);
+  }
+}
