@@ -208,6 +208,59 @@ export const siteConfig = {
     },
   ],
 
+  gallery: {
+    sectionTitle: 'Así es Piscis',
+    sectionSubtitle: 'El fuego, los platos y el ambiente que te esperan.',
+    images: [
+      {
+        src: '/images/gallery/cordero-asador.jpg',
+        alt: 'Cordero al asador sobre las brasas',
+        caption: 'Cordero al asador',
+        featured: true, // ocupa 2 columnas en desktop
+      },
+      {
+        src: '/images/gallery/salon-interior.jpg',
+        alt: 'Interior del salón de Parrilla Piscis',
+        caption: 'Nuestro salón',
+        featured: false,
+      },
+      {
+        src: '/images/gallery/goulash-ciervo.jpg',
+        alt: 'Goulash de ciervo patagónico con spätzle',
+        caption: 'Goulash de ciervo',
+        featured: false,
+      },
+      {
+        src: '/images/gallery/trucha.jpg',
+        alt: 'Trucha a la manteca negra',
+        caption: 'Trucha a la manteca negra',
+        featured: false,
+      },
+      {
+        src: '/images/gallery/parrilla-fuego.jpg',
+        alt: 'Parrilla con brasas encendidas',
+        caption: 'A fuego lento',
+        featured: false,
+      },
+      {
+        src: '/images/gallery/vinos.jpg',
+        alt: 'Selección de vinos patagónicos',
+        caption: 'Vinos patagónicos',
+        featured: false,
+      },
+    ],
+  },
+
+  location: {
+    address: 'Gral. Villegas 598, San Martín de los Andes, Neuquén, Argentina',
+    mapsEmbedUrl:
+      'https://maps.google.com/maps?q=Gral.+Villegas+598,+San+Martín+de+los+Andes,+Neuquén,+Argentina&output=embed',
+    mapsLink:
+      'https://maps.google.com/?q=Gral.+Villegas+598,+San+Martín+de+los+Andes,+Neuquén,+Argentina',
+    hours: null, // TODO: verificar horarios reales de almuerzo y cena
+    reference: 'A pocas cuadras del lago Lácar, en el centro de San Martín de los Andes.',
+  },
+
   footer: {
     tagline: 'Auténtica parrilla patagónica desde San Martín de los Andes.',
     links: [

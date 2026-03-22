@@ -7,7 +7,6 @@ const { footer, business } = siteConfig
 export default function Footer() {
   return (
     <footer
-      id="ubicacion"
       style={{ background: 'var(--secondary)', color: '#fff' }}
     >
       {/* Contact section */}
